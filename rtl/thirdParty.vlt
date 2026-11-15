@@ -1,0 +1,3 @@
+// Third-party IP is used unmodified; its lint is the upstream projects' concern.
+`verilator_config
+lint_off -file "*third_party/*"

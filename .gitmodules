@@ -1,3 +1,12 @@
 [submodule "networkOnChip"]
 	path = networkOnChip
 	url = git@github.com:tms4517/networkOnChip.git
+[submodule "third_party/picorv32"]
+	path = third_party/picorv32
+	url = https://github.com/YosysHQ/picorv32.git
+[submodule "third_party/apb_timer"]
+	path = third_party/apb_timer
+	url = https://github.com/pulp-platform/apb_timer.git
+[submodule "third_party/apb_gpio"]
+	path = third_party/apb_gpio
+	url = https://github.com/pulp-platform/apb_gpio.git

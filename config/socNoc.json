@@ -1,0 +1,31 @@
+{
+  "projectName": "Soc",
+  "gridWidth": 2,
+  "fabricClock": "fabric",
+  "initiators": [
+    {"name": "cpu", "protocol": "axiLite", "clock": "cpu", "router": 0}
+  ],
+  "targets": [
+    {
+      "name": "ram",
+      "protocol": "axiLite",
+      "clock": "fabric",
+      "router": 1,
+      "addressMap": [{"base": "0x0000_0000", "size": "0x4000"}]
+    },
+    {
+      "name": "timer",
+      "protocol": "apb",
+      "clock": "periph",
+      "router": 2,
+      "addressMap": [{"base": "0x4000_0000", "size": "0x1000"}]
+    },
+    {
+      "name": "gpio",
+      "protocol": "apb",
+      "clock": "periph",
+      "router": 3,
+      "addressMap": [{"base": "0x4000_1000", "size": "0x1000"}]
+    }
+  ]
+}
