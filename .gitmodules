@@ -1,0 +1,3 @@
+[submodule "networkOnChip"]
+	path = networkOnChip
+	url = git@github.com:tms4517/networkOnChip.git
