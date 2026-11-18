@@ -67,8 +67,10 @@ module socTop
   logic        cpuRready;
 
 /* verilator lint_off PINCONNECTEMPTY */
+  // o_cpuTrap is asserted when the core hits a fault it can't handle and halts
+  // permanently.
   picorv32_axi
-  #(.ENABLE_COUNTERS ('1)
+  #(.ENABLE_COUNTERS ('0)
   , .ENABLE_IRQ      ('0)
   , .COMPRESSED_ISA  ('0)
   , .PROGADDR_RESET  (32'h0000_0000)
